@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="./output.css">
+    <style>
+        /* Cool background colors for sections */
+        #home {
+            background-color: #F0F4F8; /* Light Blue Grey */
+        }
+
+        #about {
+            background-color: #FFFFFF; /* White */
+        }
+
+        #resume {
+            background-color: #EDF2F7; /* Light Grey Blue */
+        }
+
+        #contact {
+            background-color: #E2E8F0; /* Light Grey */
+        }
+
+        /* Sliding animation */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Apply animation to sections */
+        .section {
+            opacity: 0;
+            animation: slideIn 0.5s ease forwards;
+        }
+
+    
+    </style>
+</head>
+<body class="bg-gray-100 w-full">
+
+    <nav class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-xl font-semibold">My Personal Website</h1>
+            <ul class="flex">
+                <li class="mr-6"><a href="#home" class="hover:underline">Home</a></li>
+                <li class="mr-6"><a href="#about" class="hover:underline">About</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class= "flex flex-col w-5/6 mx-auto py-8 px-4 ">
+\        <!-- Home Section -->
+        <div id="home" class="text-center bg-gray-400 flex flex-col justify-between h-screen overflow-y-scroll mb-9">
+            <div class="flex flex-col justify-between w-full h-64 overflow-hidden">
+                <h1 class="text-4xl font-semibold mb-4">Welcome to My Personal Website</h1>
+                <!-- Diagonal welcome image -->
+                <!-- End of Diagonal welcome image -->
+                <img src="./images/profile.jpg" alt="Welcome Image" class="flex justify-center transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 object-cover rounded-lg shadow-md transition duration-300 hover:scale-105">
+            </div>
+        </div>
+        
+
+        <!-- About Section -->
+        <div id="about" class="text-center my-8 section h-screen overflow-y-scroll">
+            <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+            <img src="./images/family.jpg" alt="About Image" class="mx-auto rounded-full w-48 h-48">
+            <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida odio sit amet leo suscipit, sed dapibus ex convallis. Vestibulum non tellus consequat, hendrerit turpis sit amet, commodo diam.</p>
+        </div>
+
+        
+        <!-- Resume Section -->
+        <div id="resume" class="text-center section h-screen space-y-36 overflow-y-scroll  rounded-lg">
+            <h2 class="text-2xl font-semibold space-y-36">Resume</h2>
+            <div class="resume-section space-y-24">
+                <div class="bg-gray-200 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Education</h3>
+                    <ul class="list-disc pl-6">
+                        <li>Bachelor's Degree in Business Administration</li>
+                        <li>University Name, Graduation Year</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-200 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Volunteer Experience</h3>
+                    <ul class="list-disc pl-6">
+                        <li>Bachelor's Degree in Business Administration</li>
+                        <li>University Name, Graduation Year</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-200 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Work Experience</h3>
+                    <ul class="list-disc pl-6">
+                        <li>Ex. Product Manager</li>
+                        <li>IBM some company (Year-Year)</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-200 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Awards and Achievements</h3>
+                    <ul class="list-disc pl-6">
+                        <li>Employee of the Month (Month Year)</li>
+                        <li>Best Project Award (Year)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="text-center h-screen overflow-y-scroll section">
+            <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
+            <p class="

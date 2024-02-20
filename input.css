@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* hide scrollbars */
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+/* Show scrollbars when overflows */
+.overflow-y-scroll::-webkit-scrollbar,
+.overflow-y-scroll::-webkit-scrollbar-thumb {
+    display: block;
+}
+
+
+/* 
+.diagonal-image {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: url('./images/profile.jpg');
+    background-size: cover;
+    background-position: center;
+    transform: rotate(-45deg);
+    border-radius: 20px; /* Adjust the curve radius as desired */
